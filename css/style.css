@@ -964,3 +964,314 @@ button:focus-visible {
         width: 100%;
     }
 }
+
+
+/* ========================================
+   PAGE CONTACT — KEN RESTO
+   Identité visuelle partagée
+======================================== */
+
+/* Hero */
+
+.contact-hero-section {
+    padding: 80px 0 90px;
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(198, 107, 67, 0.09),
+            transparent 35%
+        ),
+        var(--brand-cream);
+}
+
+.contact-hero-section .hero-title {
+    max-width: 800px;
+}
+
+.contact-hero-section .hero-text {
+    max-width: 650px;
+}
+
+.contact-hero-card {
+    padding: 32px;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+}
+
+.contact-hero-icon {
+    display: grid;
+    place-items: center;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 22px;
+    border-radius: 15px;
+    background: var(--brand-light);
+    font-size: 1.8rem;
+}
+
+.contact-hero-card h2 {
+    color: var(--brand-dark);
+    font-size: 1.65rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-hero-card p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+/* Informations de contact */
+
+.contact-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.contact-detail-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+    padding: 19px;
+    background: var(--brand-cream);
+    border: 1px solid var(--border-color);
+    border-radius: 13px;
+}
+
+.contact-detail-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: white;
+    font-size: 1.3rem;
+}
+
+.contact-detail-card h3 {
+    color: var(--brand-dark);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.contact-detail-card p {
+    color: var(--text-muted);
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-detail-card a {
+    color: var(--brand-green);
+}
+
+.contact-detail-card a:hover {
+    color: var(--brand-accent);
+}
+
+.contact-note {
+    margin-top: 25px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.contact-note span {
+    color: var(--brand-accent);
+    margin-right: 7px;
+}
+
+/* Formulaire */
+
+.contact-form-card {
+    padding: 38px;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+}
+
+.contact-form-card .section-title {
+    font-size: clamp(1.8rem, 3vw, 2.3rem);
+    margin-bottom: 15px;
+}
+
+.contact-form .form-label {
+    color: var(--brand-dark);
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-control {
+    min-height: 52px;
+    padding: 13px 15px;
+    color: var(--text-main);
+    background-color: #fff;
+    border: 1px solid #dcded8;
+    border-radius: 9px;
+    font: inherit;
+    font-size: 0.95rem;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.contact-form textarea.form-control {
+    min-height: 155px;
+    resize: vertical;
+}
+
+.contact-form .form-control::placeholder {
+    color: #929a94;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--brand-green);
+    box-shadow: 0 0 0 0.22rem rgba(40, 91, 72, 0.13);
+}
+
+.contact-form .btn {
+    margin-top: 5px;
+    white-space: normal;
+}
+
+.form-privacy-note {
+    margin: 18px 0 0;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+
+/* Réservation */
+
+.reservation-section {
+    padding: 15px 0 95px;
+}
+
+.reservation-panel {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 35px;
+    border-radius: 22px;
+    background:
+        radial-gradient(
+            circle at 100% 0,
+            rgba(255, 255, 255, 0.10),
+            transparent 35%
+        ),
+        var(--brand-dark);
+}
+
+.reservation-panel .section-label {
+    color: #f0b28f;
+}
+
+.reservation-panel h2 {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+}
+
+.reservation-panel p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.reservation-panel .btn {
+    white-space: normal;
+}
+
+/* Tablettes */
+
+@media (max-width: 991.98px) {
+    .contact-hero-section {
+        padding: 65px 0 75px;
+    }
+
+    .contact-hero-card {
+        padding: 28px;
+    }
+
+    .contact-form-card {
+        padding: 30px;
+    }
+
+    .reservation-section {
+        padding-bottom: 75px;
+    }
+}
+
+/* Téléphones */
+
+@media (max-width: 575.98px) {
+    .contact-hero-section {
+        padding: 55px 0 60px;
+    }
+
+    .contact-hero-section .hero-title {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+        letter-spacing: -1px;
+    }
+
+    .contact-hero-section .btn {
+        width: 100%;
+    }
+
+    .contact-hero-card {
+        padding: 25px;
+    }
+
+    .contact-detail-card {
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .contact-detail-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .contact-form-card {
+        padding: 24px 19px;
+        border-radius: 14px;
+    }
+
+    .contact-form-card .section-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-form .form-control {
+        font-size: 16px;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+        padding: 13px 15px;
+    }
+
+    .reservation-section {
+        padding: 0 0 60px;
+    }
+
+    .reservation-panel {
+        padding: 45px 22px;
+        border-radius: 15px;
+    }
+
+    .reservation-panel h2 {
+        font-size: 2rem;
+    }
+
+    .reservation-panel .btn {
+        width: 100%;
+    }
+}
